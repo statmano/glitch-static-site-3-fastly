@@ -2,16 +2,14 @@
 
 Use this repo if you have a static Glitch site you want to deploy to Fastly Compute, like a Glitch in Bio or Hello Eleventy remix.
 
-## Set up your repo and Codespace
+## Set up your repo 
 
-* Fork the migration repo: https://github.com/glitchdotcom/glitch-static-site-to-fastly/
-* Export your Glitch project to your forked repo from the editor Tools menu https://help.glitch.com/s/article/Exporting-Projects-to-GitHub
-* Merge your glitch branch into your main branch
-* Remove a couple of files that might appear in your export and could complicate subsequent steps (make sure you’re on your glitch branch if you’re in GitHub):
+* Fork the migration repo: [glitchdotcom/glitch-static-site-to-fastly](https://github.com/glitchdotcom/glitch-static-site-to-fastly/)
+* Export your Glitch project to your forked repo from the editor Tools menu: [Glitch help docs export guide](https://help.glitch.com/s/article/Exporting-Projects-to-GitHub)
+* Merge your `glitch` branch into your `main` branch
+* Remove a couple of files that might appear in your export and could complicate subsequent steps:
   * `package-lock.json`
   * `shrinkwrap.yaml`
-
-Open your project in a GitHub Codespace by clicking **Code** on your new repo and creating a new codespace on your main branch.
 
 ## Update your images
 
@@ -19,7 +17,11 @@ If you uploaded images to Glitch through the Assets folder you’ll need to move
 
 * Download your images
 * Include them in a folder in your Codespaces app 
-* Update image references in yoru site code (like `src` in `img` elements) to point at your local files
+* Update image references in your site code (like `src` in `img` elements) to point at your local files
+
+## Open your project in a Codespace
+
+Open your project in a GitHub Codespace by clicking **Code** on your new repo and creating a new codespace on your main branch. The Codespace container scripts will attempt to build and run your site.
 
 ## Test your site locally
 
