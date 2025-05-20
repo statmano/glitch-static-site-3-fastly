@@ -16,7 +16,7 @@ Use this repo if you have a static Glitch site you want to deploy to Fastly Comp
 If you uploaded images to Glitch through the Assets folder you’ll need to move them too:
 
 * Download your images
-* Include them in a folder in your Codespaces app 
+* Include them in a folder in your new repo 
 * Update image references in your site code (like `src` in `img` elements) to point at your local files
 
 ## Open your project in a Codespace
