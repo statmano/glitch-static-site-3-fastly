@@ -25,12 +25,14 @@ Open your project in a GitHub Codespace by clicking **Code** on your new repo an
 
 ## Test your site locally
 
-Your Codespace scripts will attempt to build and run your site. You'll need files in the `build` folder to deploy to Fastly – this folder should appear and be populated automatically if you're using a Glitch in Bio or Hello Eleventy remix. If you were using a static site with no `package.json` file you'll need to make the folder manually:
+Your Codespace scripts will attempt to build and run your site. You'll need files in the `build` folder to deploy to Fastly – this folder should appear and be populated automatically if you're using a Glitch in Bio or Hello Eleventy remix. 
+
+Check your `build` folder for your output files. If they're there you're good to move forward.
+
+If you were using a static site with no `package.json` file you'll need to make the folder manually:
 
 * Create a folder named `build`
 * Copy all of your static site files into the new folder (e.g. HTML, CSS, client side JS, images)
-
-Check your `build` folder for your output files. If they're there you're good to move forward.
 
 Click the **🧪 Serve** button at the bottom of the Codespace. 
 
