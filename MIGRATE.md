@@ -15,6 +15,8 @@ Use this repo if you have a static Glitch site you want to deploy to Fastly Comp
 * Add your Glitch project files to your new repo
   * You might find this easiest by cloning your forked repo locally and copying the files over – remember to push your changes to GitHub
 
+### Static sites with no build process
+
 If your site does not contain a `package.json` file, for example if it's a Hello Website remix, you'll need to add a couple of files to use a build process:
 
 Add a `package.json` file:
@@ -78,11 +80,6 @@ Check your `build` folder for your output files. If they're there you're good to
 ### Sites with a different build process or output folder
 
 If you're having trouble getting the build process to complete, check out your project `package.json` file for the relevant commands to try, and any config files you have for the framework you're using, in case the output folder is named something different – if it is, change the `_migrate/serve.sh` and `_migrate/publish.sh` scripts to point at the relevant folder instead of `build`.
-
-If you were using a static site with no `package.json` file (like a Glitch Hello Website remix) and your site files are just sitting in the root directory of your project, you'll also need to change to the `_migrate` scripts:
-
-* In `_migrate/serve.sh` change `./build` to `./`
-* Do the same in `_migrate/publish.sh` to change `./build` to `./`
 
 ## Test your Compute app
 
