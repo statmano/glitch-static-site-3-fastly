@@ -23,20 +23,22 @@ If you uploaded images to Glitch through the Assets folder you’ll need to move
 
 Open your project in a GitHub Codespace by clicking **Code** on your new repo and creating a new codespace on your main branch. The Codespace container scripts will attempt to build and run your site.
 
+You'll find some helper buttons along the bottom of the editor that run scripts in the `_migrate` folder – you might need to tweak these commands depending on your website.
+
 ## Test your site locally
 
-You'll need your site output files to be in the `build` folder to deploy to Fastly – this folder should appear and be populated automatically if you're using a Glitch in Bio or Hello Eleventy remix. 
+In most cases you'll need your site output files to be in the `build` folder to deploy to Fastly – this folder should appear and be populated automatically if you're using a Glitch in Bio or Hello Eleventy remix and will include the static assets that make up your production website (e.g. HTML, CSS, client side JS, images).
 
 Check your `build` folder for your output files. If they're there you're good to move forward.
 
-If you were using a static site with no `package.json` file you'll need to make the folder manually:
+If you were using a static site with no `package.json` file (like a Glitch Hello Website remix) and your site files are just sitting in the root directory of your project, you'll need to make a change to the `_migrate` scripts:
 
-* Create a folder named `build`
-* Copy all of your static site files into the new folder (e.g. HTML, CSS, client side JS, images)
+* In `_migrate/serve.sh` change `./build` to `./`
+* Do the same in `_migrate/publish.sh` to change `./build` to `./`
 
-Click the **🧪 Serve** button at the bottom of the Codespace. 
+Click the **🧪 Serve** button at the bottom of the Codespace to try building and running a Compute app to deliver your website.
 
-The Fastly tooling will attempt to scaffold a new Compute app for your project and run it in the Codespace – it might take a couple of minutes but you should see a preview of your site open in the Codespace.
+The Fastly tooling will attempt to scaffold a new Compute app for your project and run it in the Codespace – it might take a couple of minutes but you should see a preview of your site open in the Codespace. Use the **🔎 Split** button to show the preview side by side with your files.
 
 ## Deploy your site
 
@@ -59,7 +61,9 @@ Back in your Codespace, click into the textfield at the top of the editor and ty
   
 In the notifications area at the bottom right of your codespace, you should see a prompt to reload for the new environment variable, so go ahead and click that (otherwise click the little bell 🔔 icon to check for the message).
 
-Go ahead and click the **🚀 Publish** button at the bottom of the Codespace editor and watch the Terminal for the output! Hopefully you see an `edgecompute.app` domain that returns your site...
+> You can alternatively add your API key in the repo **Settings** > **Secrets and variables** > **Codespaces**.
+
+Go ahead and click the **🚀 Publish** button at the bottom of the Codespace editor, confirm you want to proceed with a `y` and watch the Terminal for the output! Hopefully you see an `edgecompute.app` domain that returns your site...
 
 ## If you’re using a domain through Fastly 
 
