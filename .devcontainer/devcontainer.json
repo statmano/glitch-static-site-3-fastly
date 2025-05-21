@@ -29,7 +29,8 @@
   "updateContentCommand": "npm install",
   "postAttachCommand": {
     "start": "npm run start",
-    "build": "npm run build"
+    "build": "npm run build",
+    "guide": "bash _migrate/guide.sh"
   },
   "waitFor": "updateContentCommand",
   "customizations": {
