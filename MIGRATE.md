@@ -25,7 +25,13 @@ If you uploaded images to Glitch through the Assets folder you’ll need to move
 
 ## Open your project in a Codespace
 
-Open your project in a GitHub Codespace by clicking **Code** on your new repo and creating a new codespace on your branch. The Codespace container scripts will attempt to build and run your site.
+Open your project in a GitHub Codespace by clicking **Code** on your new repo and creating a new codespace on your branch. 
+
+![create codespace](https://github.com/user-attachments/assets/078484b0-af79-45e8-8f4f-4a3ef045b185)
+
+The Codespace container scripts will attempt to build and run your site. Use the **🔎 Split** button to show the preview side by side with your files.
+
+![running local app](https://github.com/user-attachments/assets/4311816e-5cab-4207-addf-78cea7194823)
 
 You'll find some helper buttons along the bottom of the editor that run scripts in the `_migrate` folder – you might need to tweak these commands depending on your website.
 
@@ -48,7 +54,11 @@ If you were using a static site with no `package.json` file (like a Glitch Hello
 
 Click the **🧪 Serve** button at the bottom of the Codespace to try building and running a Compute app to deliver your website.
 
-The Fastly tooling will attempt to scaffold a new Compute app for your project and run it in the Codespace – it might take a couple of minutes but you should see a preview of your site open in the Codespace. Use the **🔎 Split** button to show the preview side by side with your files.
+The Fastly tooling will attempt to scaffold a new Compute app for your project and run it in the Codespace – it might take a couple of minutes but you should see a preview of your site open in the Codespace. 
+
+![running test compute app](https://github.com/user-attachments/assets/f3c17565-4e42-449d-892f-8adc49e02c6c)
+
+You should see the preview URL change to reflect the port number for your Compute app which will be `7676`.
 
 Your Compute app code will be in the `_app` folder, and the `fastly.toml` file will update with your Fastly service details as you execute the commands.
 
@@ -75,7 +85,17 @@ In the notifications area at the bottom right of your codespace, you should see 
 
 > You can alternatively add your API key in the repo **Settings** > **Secrets and variables** > **Codespaces**.
 
-Go ahead and click the **🚀 Publish** button at the bottom of the Codespace editor, confirm you want to proceed with a `y` and watch the Terminal for the output! Hopefully you see an `edgecompute.app` domain that returns your site...
+![reload codespace](https://github.com/user-attachments/assets/b7a3271a-b183-44f2-82ed-968aa26f921e)
+
+_When you reload your codespace you might see an error about a port already being in use – you can ignore it._ 💅
+
+Go ahead and click the **🚀 Publish** button at the bottom of the Codespace editor, confirm you want to proceed with a `y` and watch the Terminal for the output! 
+
+![follow link](https://github.com/user-attachments/assets/ed2c4a60-5d4e-4a0d-b06b-a6d7a6d45c70)
+
+Hopefully you see an `edgecompute.app` domain that returns your site – go ahead and open it!
+
+![deployed app](https://github.com/user-attachments/assets/a6c2210b-bdf0-4256-bcd9-67052c15d9f9)
 
 > ⚠️ Note that if you go through this flow for more than one site you’ll need to change the KV Store name in your `_migrate` scripts to avoid duplicates.
 
@@ -93,4 +113,3 @@ You’ll find your new Compute service in your Fastly account and can access Obs
 📣 The migration scripts in this repo are very much a work in progress and we'll be iterating on them based on your feedback – please feel welcome to create Issues on [this GitHub repo](https://github.com/glitchdotcom/glitch-static-site-to-fastly)!
 
 🛟 Need support? Post on the [Fastly Community Forum](https://community.fastly.com)
-
