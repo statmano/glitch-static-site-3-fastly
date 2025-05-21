@@ -21,7 +21,7 @@ If your site does not contain a `package.json` file, for example if it's a Hello
 
 Add a `package.json` file:
 
-```
+```json
 {  
   "scripts": {
     "start": "vite",
@@ -39,7 +39,7 @@ Add a `package.json` file:
 
 And a `vite.config.js` file:
 
-```
+```js
 import { defineConfig } from "vite";
 
 export default defineConfig(async ({ command, mode }) => {
