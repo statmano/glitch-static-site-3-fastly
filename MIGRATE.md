@@ -75,6 +75,8 @@ In the notifications area at the bottom right of your codespace, you should see 
 
 Go ahead and click the **🚀 Publish** button at the bottom of the Codespace editor, confirm you want to proceed with a `y` and watch the Terminal for the output! Hopefully you see an `edgecompute.app` domain that returns your site...
 
+> ⚠️ Note that if you go through this flow for more than one site you’ll need to change the KV Store name in your `_migrate` scripts to avoid duplicates.
+
 ## If you’re using a domain through Fastly 
 
 If you already have a domain for your site in a Fastly CDN service, you have two choices:
