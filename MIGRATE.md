@@ -11,7 +11,7 @@ Use this repo if you have a static Glitch site you want to deploy to Fastly Comp
 * Unzip your downloaded app – remove a couple of files that might appear in your export and could complicate subsequent steps, for example:
   * `package-lock.json`
   * `shrinkwrap.yaml`
-  * _Check for any other files you think you can remove_
+  * _Check for any other files you think you can remove, including files beginning with `.` that may be hidden by default_
 * Add your Glitch project files to your new repo
   * You might find this easiest by cloning your forked repo locally and copying the files over – remember to push your changes to GitHub
 
