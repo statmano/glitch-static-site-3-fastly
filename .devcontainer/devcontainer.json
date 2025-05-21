@@ -9,6 +9,18 @@
     "ghcr.io/devcontainers/features/github-cli:1": {}
   },
   "portsAttributes": {
+    "3000-3010": {
+      "label": "Site",
+      "onAutoForward": "openPreview"
+    },
+    "5173-5180": {
+      "label": "Site",
+      "onAutoForward": "openPreview"
+    },
+    "8080-8090": {
+      "label": "Site",
+      "onAutoForward": "openPreview"
+    },
     "7676": {
       "label": "Compute",
       "onAutoForward": "openPreview"
@@ -40,13 +52,13 @@
             {
               "name": "🧪 Serve",
               "singleInstance": true,
-              "command": "npm run build && npx --yes @fastly/compute-js-static-publish@latest --root-dir=./build --kv-store-name=my-site-content && cd compute-js && npm run dev:publish && npm run dev:start",
+              "command": "bash _migrate/serve.sh",
               "tooltip": "Test your Fastly Compute app"
             },
             {
               "name": "🚀 Publish",
               "singleInstance": true,
-              "command": "cd compute-js && npm run fastly:deploy && npm run fastly:publish && readarray -t lines < <(npx --yes @fastly/cli domain list --version=latest) && IFS='   ' read -r -a array <<< \"${lines[1]}\" && echo 'YAY check out your new site 🪩 🛼 🎏' && echo https://${array[2]}",
+              "command": "bash _migrate/publish.sh",
               "tooltip": "Publish your content to Fastly Compute"
             }
           ],
