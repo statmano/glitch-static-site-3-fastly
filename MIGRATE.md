@@ -38,7 +38,6 @@ Add a `package.json` file:
 And a `vite.config.js` file:
 
 ```
-import { resolve } from "path";
 import { defineConfig } from "vite";
 
 export default defineConfig(async ({ command, mode }) => {
