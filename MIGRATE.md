@@ -2,7 +2,7 @@
 
 Use this repo if you have a static Glitch site you want to deploy to Fastly Compute, like a Glitch in Bio or Hello Eleventy remix.
 
-> **⚠️ We'll be using the [Static Publisher](https://github.com/fastly/compute-js-static-publish) tool with some helper scripts that run in a GitHub Codespace – the scripts will attempt to automate parts of the process for you but they won't work across all websites. If you're having trouble please feel free to post on the [Fastly community forum](https://community.fastly.com) for help.**
+> **We'll be using the [Static Publisher](https://github.com/fastly/compute-js-static-publish) tool with some helper scripts that run in a GitHub Codespace – the scripts will attempt to automate parts of the process for you but they won't work across all websites. If you're having trouble please feel free to post on the [Fastly community forum](https://community.fastly.com) for help.**
 
 ## Set up your repo 
 
@@ -90,5 +90,7 @@ You’ll find your new Compute service in your Fastly account and can access Obs
 
 ## HELP
 
-Need support? Post on the [Fastly Community Forum](https://community.fastly.com)
+📣 The migration scripts in this repo are very much a work in progress and we'll be iterating on them based on your feedback – please feel welcome to create Issues on [this GitHub repo](https://github.com/glitchdotcom/glitch-static-site-to-fastly)!
+
+🛟 Need support? Post on the [Fastly Community Forum](https://community.fastly.com)
 
