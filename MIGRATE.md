@@ -48,6 +48,8 @@ Click the **🧪 Serve** button at the bottom of the Codespace to try building a
 
 The Fastly tooling will attempt to scaffold a new Compute app for your project and run it in the Codespace – it might take a couple of minutes but you should see a preview of your site open in the Codespace. Use the **🔎 Split** button to show the preview side by side with your files.
 
+Your Compute app code will be in the `_app` folder, and the `fastly.toml` file will update with your Fastly service details as you execute the commands.
+
 ## Deploy your site
 
 Ready to publish? Great, [sign up for a free Fastly developer account](https://www.fastly.com/signup/).
