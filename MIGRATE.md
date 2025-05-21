@@ -17,7 +17,7 @@ Use this repo if you have a static Glitch site you want to deploy to Fastly Comp
 
 ### Static sites with no build process
 
-If your site does not contain a `package.json` file, for example if it's a Hello Website remix, you'll need to add a couple of files to use a build process:
+If your site does not contain a `package.json` file, for example if it's a Hello Website remix, you'll need to add a couple of files to use a build process which will add your files to an output folder:
 
 Add a `package.json` file:
 
