@@ -8,11 +8,12 @@ Use this repo if you have a static Glitch site you want to deploy to Fastly Comp
 
 * Fork the migration repo: [glitchdotcom/glitch-static-site-to-fastly](https://github.com/glitchdotcom/glitch-static-site-to-fastly/)
 * Download your Glitch project from the editor **Tools** menu: [Glitch help docs export guide](https://help.glitch.com/s/article/Downloading-Projects)
-* Unzip and upload your project files into your new repo
-  * You might find this easier by cloning your forked repo locally and copying the files over – remember to push your changes to GitHub
-* Remove a couple of files that might appear in your export and could complicate subsequent steps:
+* Unzip your downloaded app – remove a couple of files that might appear in your export and could complicate subsequent steps, for example:
   * `package-lock.json`
   * `shrinkwrap.yaml`
+  * _Check for any other files you think you can remove_
+* Add your Glitch project files to your new repo
+  * You might find this easiest by cloning your forked repo locally and copying the files over – remember to push your changes to GitHub
 
 ## Update your images
 
@@ -24,7 +25,7 @@ If you uploaded images to Glitch through the Assets folder you’ll need to move
 
 ## Open your project in a Codespace
 
-Open your project in a GitHub Codespace by clicking **Code** on your new repo and creating a new codespace on your main branch. The Codespace container scripts will attempt to build and run your site.
+Open your project in a GitHub Codespace by clicking **Code** on your new repo and creating a new codespace on your branch. The Codespace container scripts will attempt to build and run your site.
 
 You'll find some helper buttons along the bottom of the editor that run scripts in the `_migrate` folder – you might need to tweak these commands depending on your website.
 
