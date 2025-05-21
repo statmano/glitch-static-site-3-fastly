@@ -15,6 +15,41 @@ Use this repo if you have a static Glitch site you want to deploy to Fastly Comp
 * Add your Glitch project files to your new repo
   * You might find this easiest by cloning your forked repo locally and copying the files over – remember to push your changes to GitHub
 
+If your site does not contain a `package.json` file, for example if it's a Hello Website remix, you'll need to add a couple of files to use a build process:
+
+Add a `package.json` file:
+
+```
+{  
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^4.0.0"
+  },
+  "engines": {
+    "node": "16.x"
+  }
+}
+```
+
+And a `vite.config.js` file:
+
+```
+import { resolve } from "path";
+import { defineConfig } from "vite";
+
+export default defineConfig(async ({ command, mode }) => {
+  return {
+    build: {
+      outDir: "build"
+    }
+  };
+});
+```
+
 ## Update your images
 
 If you uploaded images to Glitch through the Assets folder you’ll need to move them too:
