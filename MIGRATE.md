@@ -91,7 +91,7 @@ The Fastly tooling will attempt to scaffold a new Compute app for your project a
 
 You should see the preview URL change to reflect the port number for your Compute app which will be `7676`.
 
-Your Compute app code will be in the `_app` folder, and the `fastly.toml` file will update with your Fastly service details as you execute the commands.
+Your Compute app code will be in the `compute-js` folder, and the `fastly.toml` file will update with your Fastly service details as you execute the commands.
 
 ## Deploy your site
 
