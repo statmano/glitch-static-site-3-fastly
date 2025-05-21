@@ -51,6 +51,13 @@
               "tooltip": "Open a terminal"
             },
             {
+              "name": "🔎 Split",
+              "singleInstance": true,
+              "useVsCodeApi": true,
+              "command": "workbench.action.moveEditorToNextGroup",
+              "tooltip": "Move your active tab to the side"
+            },
+            {
               "name": "🧪 Serve",
               "singleInstance": true,
               "command": "bash _migrate/serve.sh",
