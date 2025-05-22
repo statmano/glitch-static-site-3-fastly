@@ -99,6 +99,8 @@ You should see the preview URL change to reflect the port number for your Comput
 
 Your Compute app code will be in the `compute-js` folder, and the `fastly.toml` file will update with your Fastly service details as you execute the commands.
 
+> 🏗️ _If your Compute app doesn't successfully serve the first time it's best to delete the `compute-js` folder before trying again._
+
 ## Deploy your site
 
 Ready to publish? Great, [sign up for a free Fastly developer account](https://www.fastly.com/signup/).
