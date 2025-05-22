@@ -75,6 +75,8 @@ The Codespace container scripts will attempt to build and run your site. Use the
 
 You'll find some helper buttons along the bottom of the editor that run scripts in the `_migrate` folder – you might need to tweak these commands depending on your website.
 
+> 💫 _Using an older Glitch in Bio remix and seeing an endless reload? Remove the `server` object from your `vite.config.js` file and hopefully that'll sort it – this was an optimization we included for editing in Glitch._
+
 ## Build your site locally
 
 In most cases you'll need your site output files to be in the `build` folder to deploy to Fastly – this folder should appear and be populated automatically if you're using a **Glitch in Bio** or **Hello Eleventy** remix and will include the static assets that make up your production website (e.g. HTML, CSS, client side JS, images).
