@@ -1,14 +1,16 @@
 # Migrate your static Glitch site to Fastly Compute
 
-Use this repo if you have a static Glitch site you want to deploy to Fastly Compute, like a Glitch in Bio or Hello Eleventy remix.
+Use this repo if you have a static Glitch site you want to deploy to Fastly Compute, like a **Glitch in Bio** or **Hello Eleventy** remix. We'll be using the [Static Publisher](https://github.com/fastly/compute-js-static-publish) tool with some helper scripts that run in a GitHub Codespace.
 
-> **We'll be using the [Static Publisher](https://github.com/fastly/compute-js-static-publish) tool with some helper scripts that run in a GitHub Codespace – the scripts will attempt to automate parts of the process for you but they won't work across all websites. If you're having trouble please feel free to post on the [Fastly community forum](https://community.fastly.com) for help.**
+> **🚨 The container scripts in this project will attempt to automate parts of the migration process for you, but they won't work across all Glitch websites because there are simply to many weird and wonderful variations to accommodate. 🌈 🛼 🪩**
+>
+> **We'd love your help making this process helpful to more people, so please share problems, suggestions, and feedback, either here in the repo [Issues](https://github.com/glitchdotcom/glitch-static-site-to-fastly/issues) or on the [Fastly community forum](https://community.fastly.com). 📣**
 
 ## Set up your repo 
 
 * Fork the migration repo: [glitchdotcom/glitch-static-site-to-fastly](https://github.com/glitchdotcom/glitch-static-site-to-fastly/)
 * Download your Glitch project from the editor **Tools** menu: [Glitch help docs export guide](https://help.glitch.com/s/article/Downloading-Projects)
-* Unzip your downloaded app – remove a couple of files that might appear in your export and could complicate subsequent steps, for example:
+* Unzip your downloaded app – remove some files that might appear in your export and could complicate subsequent steps, for example:
   * `package-lock.json`
   * `shrinkwrap.yaml`
   * _Check for any other files you think you can remove, including files beginning with `.` that may be hidden by default_
@@ -17,7 +19,7 @@ Use this repo if you have a static Glitch site you want to deploy to Fastly Comp
 
 ### Static sites with no build process
 
-If your site does not contain a `package.json` file, for example if it's a Hello Website remix, you'll need to add a couple of files to use a build process which will add your files to an output folder:
+If your site does not contain a `package.json` file, for example if it's a **Hello Website** remix, you'll need to add a couple of files to use a build process which will add your files to an output folder:
 
 Add a `package.json` file:
 
@@ -73,7 +75,7 @@ You'll find some helper buttons along the bottom of the editor that run scripts 
 
 ## Build your site locally
 
-In most cases you'll need your site output files to be in the `build` folder to deploy to Fastly – this folder should appear and be populated automatically if you're using a Glitch in Bio or Hello Eleventy remix and will include the static assets that make up your production website (e.g. HTML, CSS, client side JS, images).
+In most cases you'll need your site output files to be in the `build` folder to deploy to Fastly – this folder should appear and be populated automatically if you're using a **Glitch in Bio** or **Hello Eleventy** remix and will include the static assets that make up your production website (e.g. HTML, CSS, client side JS, images).
 
 Check your `build` folder for your output files. If they're there you're good to move forward.
 
@@ -118,7 +120,7 @@ In the notifications area at the bottom right of your codespace, you should see 
 
 ![reload codespace](https://github.com/user-attachments/assets/b7a3271a-b183-44f2-82ed-968aa26f921e)
 
-_When you reload your codespace you might see an error about a port already being in use – you can ignore it._ 💅
+> _When you reload your codespace you might see an error about a port already being in use – this happens in Vite projects like Glitch in Bio. You can fix it by removing the `server` object from your `vite.config.js` file, or you can just ignore it._ 💅
 
 Go ahead and click the **🚀 Publish** button at the bottom of the Codespace editor, confirm you want to proceed with a `y` and watch the Terminal for the output! 
 
