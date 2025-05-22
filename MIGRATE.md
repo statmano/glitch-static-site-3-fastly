@@ -2,15 +2,15 @@
 
 Use this repo if you have a static Glitch site you want to deploy to Fastly Compute, like a **Glitch in Bio** or **Hello Eleventy** remix. We'll be using the [Static Publisher](https://github.com/fastly/compute-js-static-publish) tool with some helper scripts that run in a GitHub Codespace.
 
-> **🚧 This project is an experiment in serving static sites built on Glitch from Fastly!**
+> **🚧 This project is an experiment in serving static sites built on Glitch from Fastly! With the Static Publisher, you can deploy an entire website to the edge and serve it to your visitors without even needing a host.**
 > 
-> **🚨 The container scripts in this repo will attempt to automate parts of the migration process for you, but they won't work across all Glitch websites because there are simply to many weird and wonderful variations to accommodate. 🌈 🛼 🪩**
+> **🚨 The container scripts in this repo will attempt to automate parts of the process for you, but they won't work across all Glitch websites because there are simply to many weird and wonderful variations to accommodate. 🌈 🛼 🪩**
 >
-> **We'd love your help making this process helpful to more people, so please share problems, suggestions, and feedback, either here in the repo [Issues](https://github.com/glitchdotcom/glitch-static-site-to-fastly/issues) or on the [Fastly community forum](https://community.fastly.com). 📣**
+> **We'd love your help making this resource helpful to more people, so please share problems, suggestions, and feedback, either here in the repo [Issues](https://github.com/glitchdotcom/glitch-static-site-to-fastly/issues) or on the [Fastly community forum](https://community.fastly.com). 📣**
 
 ## Set up your repo 
 
-* Fork the migration repo: [glitchdotcom/glitch-static-site-to-fastly](https://github.com/glitchdotcom/glitch-static-site-to-fastly/)
+* Fork the repo: [glitchdotcom/glitch-static-site-to-fastly](https://github.com/glitchdotcom/glitch-static-site-to-fastly/)
 * Download your Glitch project from the editor **Tools** menu: [Glitch help docs export guide](https://help.glitch.com/s/article/Downloading-Projects)
 * Unzip your downloaded app – remove some files that might appear in your export and could complicate subsequent steps, for example:
   * `package-lock.json`
@@ -145,6 +145,6 @@ You’ll find your new Compute service in your Fastly account and can access Obs
 
 ## HELP
 
-📣 The migration scripts in this repo are very much a work in progress and we'll be iterating on them based on your feedback – please feel welcome to create Issues on [this GitHub repo](https://github.com/glitchdotcom/glitch-static-site-to-fastly)!
+📣 The scripts in this repo are very much a work in progress and we'll be iterating on them based on your feedback – please feel welcome to create Issues on [this GitHub repo](https://github.com/glitchdotcom/glitch-static-site-to-fastly)!
 
 🛟 Need support? Post on the [Fastly Community Forum](https://community.fastly.com)
