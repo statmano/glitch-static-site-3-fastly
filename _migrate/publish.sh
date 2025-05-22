@@ -9,8 +9,8 @@ if [ "$answer" != "${answer#[Yy]}" ] ; then
         echo '⚠️ Grab an API key and add it your repo before deploying! Check out MIGRATE.md for steps. 📖' 
     else 
         npm run build
-        if [ ! -d './_app' ]; then
-            npx --yes @fastly/compute-js-static-publish@latest --root-dir=./build --output=./_app --kv-store-name=website-content
+        if [ ! -d './compute-js' ]; then
+            npx --yes @fastly/compute-js-static-publish@latest --root-dir=./build --kv-store-name=website-content
         fi
         cd ./_app
         name=$(grep '^service_id' fastly.toml | cut -d= -f2-)
