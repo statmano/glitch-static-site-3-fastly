@@ -4,7 +4,7 @@ Use this repo if you have a static Glitch site you want to deploy to Fastly Comp
 
 > **🚧 This project is an experiment in hosting static sites built on Glitch on Fastly!**
 > 
-> **🚨 The container scripts in this project will attempt to automate parts of the migration process for you, but they won't work across all Glitch websites because there are simply to many weird and wonderful variations to accommodate. 🌈 🛼 🪩**
+> **🚨 The container scripts in this repo will attempt to automate parts of the migration process for you, but they won't work across all Glitch websites because there are simply to many weird and wonderful variations to accommodate. 🌈 🛼 🪩**
 >
 > **We'd love your help making this process helpful to more people, so please share problems, suggestions, and feedback, either here in the repo [Issues](https://github.com/glitchdotcom/glitch-static-site-to-fastly/issues) or on the [Fastly community forum](https://community.fastly.com). 📣**
 
@@ -57,7 +57,7 @@ export default defineConfig(async ({ command, mode }) => {
 
 ## Update your images
 
-If you uploaded images to Glitch through the Assets folder you’ll need to move them too:
+If you uploaded images to Glitch through the Assets folder you’ll need to move them separately:
 
 * Download your images
 * Include them in a folder in your new repo 
