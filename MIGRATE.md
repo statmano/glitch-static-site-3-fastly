@@ -136,6 +136,10 @@ Hopefully you see an `edgecompute.app` domain that returns your site – go ahea
 
 > ⚠️ Note that if you go through this flow for more than one site you’ll need to change the KV Store name in your `_migrate` scripts to avoid duplicates.
 
+## Working on your project
+
+If you make edits to your project in the Codespace, remember to commit them to your GitHub repo as the Codespace will only store them for a limited period of time. If you make edits to the repo, you'll need to sync your Codespace to pull them in. Check out the [GitHub docs](https://docs.github.com/en/codespaces/developing-in-a-codespace/using-source-control-in-your-codespace) for tips on working with your repository in a Codespace.
+
 ## If you’re using a domain through Fastly 
 
 If you already have a domain for your site in a Fastly CDN service, you have two choices:
