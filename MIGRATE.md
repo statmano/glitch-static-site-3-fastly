@@ -134,7 +134,7 @@ Hopefully you see an `edgecompute.app` domain that returns your site – go ahea
 
 ![deployed app](https://github.com/user-attachments/assets/a6c2210b-bdf0-4256-bcd9-67052c15d9f9)
 
-> ⚠️ Note that if you go through this flow for more than one site you’ll need to change the KV Store name in your `_migrate` scripts to avoid duplicates.
+> ⚠️ Note that if you go through this flow for more than one site you’ll need to change the KV Store name in your `_migrate` scripts to avoid duplicates – you also won't be able to use the same name for more than one Fastly service, so make sure your `package.json` files use unique names before deploying.
 
 ## Working on your project
 
