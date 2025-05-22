@@ -12,7 +12,7 @@ if [ "$answer" != "${answer#[Yy]}" ] ; then
         if [ ! -d './compute-js' ]; then
             npx --yes @fastly/compute-js-static-publish@latest --root-dir=./build --kv-store-name=website-content
         fi
-        cd ./_app
+        cd ./compute-js
         name=$(grep '^service_id' fastly.toml | cut -d= -f2-)
         size=${#name}
         # do we have a service id (meaning we've deployed)
