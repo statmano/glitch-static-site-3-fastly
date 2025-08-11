@@ -1,0 +1,26 @@
+# This file describes a Fastly Compute package. To learn more visit:
+# https://www.fastly.com/documentation/reference/compute/fastly-toml
+
+authors = ["Sean OBrien"]
+description = "A simple blog, set up with Eleventy."
+language = "javascript"
+manifest_version = 3
+name = "glitch-hello-eleventy-something"
+service_id = "hZ9KRVgwKwE6zRkMDFrNO1"
+
+[local_server]
+
+  [local_server.kv_stores]
+
+    [local_server.kv_stores.website-content]
+      file = "./static-publisher/kvstore.json"
+      format = "json"
+
+[scripts]
+  build = "npm run build"
+
+[setup]
+
+  [setup.kv_stores]
+
+    [setup.kv_stores.website-content]
